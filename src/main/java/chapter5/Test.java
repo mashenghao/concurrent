@@ -16,7 +16,7 @@ import java.util.LinkedList;
 public class Test {
 
     public static void main(String[] args) {
-        Service service = new Service(2);
+        Service service = new Service(5);
 
         for (int i = 0; i < 10; i++) {
             final int a = i;
@@ -37,7 +37,7 @@ public class Test {
 
 class Service {
 
-    LinkedList<Thread> pool = new LinkedList<>();
+    volatile LinkedList<Thread> pool = new LinkedList<>();
     int i = 0;
     public final int size;
     Thread executeThread;

@@ -25,7 +25,7 @@ public class ConditionChange {
         Consumer c1 = new Consumer();
         Consumer c2 = new Consumer();
         c1.start();
-        c2.start();
+       c2.start();
         p1.start();
         /*
         Thread-1--调用wait方法

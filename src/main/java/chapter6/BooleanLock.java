@@ -15,7 +15,7 @@ import java.util.Collections;
 public class BooleanLock implements Lock {
 
     //表示锁是否被占用,false表示空闲
-    private boolean initValue;
+    private volatile boolean initValue;
 
     private Collection<Thread> blockThreadCollection = new ArrayList<>();
 
@@ -87,6 +87,7 @@ public class BooleanLock implements Lock {
 
     }
 
+    @Override
     public Collection<Thread> getBlockThread() {
         return Collections.unmodifiableCollection(blockThreadCollection);
     }

@@ -7,7 +7,7 @@ package chapter3;
 public class ThreadUtil {
 
     public static String getName() {
-        return Thread.currentThread().getName()+" ";
+        return Thread.currentThread().getName() + " ";
     }
 
     public static void sleep(long l) {
@@ -18,6 +18,8 @@ public class ThreadUtil {
             e.printStackTrace();
         }
     }
+
+
 
     public static void execute(Runnable task) {
         new Thread(task).start();
