@@ -28,8 +28,8 @@ public class UnsafeTest2 {
         System.out.println("使用unsafe给变量赋值后结果是   " + in2.getI());
         //3. 作用3； 加载类；
         byte[] buf = findClass("D:\\Java\\ideas\\concurrent\\juc\\target\\classes\\chapter1\\CAS");
-        Class clazz = unsafe.defineClass(null, buf, 0, buf.length);
-        System.out.println(clazz + "   " + clazz.getClassLoader());
+        //Class clazz = unsafe.defineClass(null, buf, 0, buf.length);
+        // System.out.println(clazz + "   " + clazz.getClassLoader());
     }
 
     private static byte[] findClass(String classname) {
