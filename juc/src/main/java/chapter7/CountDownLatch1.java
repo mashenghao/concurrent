@@ -1,7 +1,6 @@
 package chapter7;
 
 import chapter1.ThreadUtil;
-import chapter5.AtomicInt;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
