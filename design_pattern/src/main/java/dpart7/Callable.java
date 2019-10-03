@@ -6,7 +6,7 @@ package dpart7;
  * @author: mahao
  * @date: 2019/8/28
  */
-public interface FutureTask<T> {
+public interface Callable<T> {
 
     /**
      * 执行的任务方法

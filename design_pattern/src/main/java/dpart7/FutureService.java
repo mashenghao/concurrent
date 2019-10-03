@@ -15,7 +15,7 @@ public class FutureService {
      * @param <T>  任务执行返回值
      * @return 结果凭证
      */
-    public <T> Future<T> submit(FutureTask<T> task) {
+    public <T> Future<T> submit(Callable<T> task) {
         //创建一个凭据，作为返回
         final AsynFuture<T> asynFuture = new AsynFuture<>();
         new Thread() {
@@ -38,7 +38,7 @@ public class FutureService {
      * @param <T>
      * @return
      */
-    public <T> Future<T> submit(FutureTask<T> task, Consumer<T> consumer) {
+    public <T> Future<T> submit(Callable<T> task, Consumer<T> consumer) {
         //创建一个凭据，作为返回
         final AsynFuture<T> asynFuture = new AsynFuture<>();
         new Thread() {
