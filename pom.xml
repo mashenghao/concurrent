@@ -10,12 +10,10 @@
     <modules>
         <module>classLoader</module>
         <module>design_pattern</module>
+        <module>juc</module>
     </modules>
     <packaging>pom</packaging>
 
-    <name>concurrent Maven Webapp</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -58,6 +56,16 @@
             <artifactId>javax.servlet.jsp-api</artifactId>
             <version>2.3.1</version>
             <scope>provided</scope>
+        </dependency>
+
+        <!--
+            https://mvnrepository.com/artifact/org.quartz-scheduler/quartz
+            定时框架
+        -->
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>2.3.0</version>
         </dependency>
     </dependencies>
 

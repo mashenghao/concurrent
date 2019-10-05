@@ -1,7 +1,33 @@
 <!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+    <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+        <servlet-name>formServlet</servlet-name>
+        <servlet-class>web.servlet.FormServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>web.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ScriptServlet</servlet-name>
+        <servlet-class>web.servlet.ScriptServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>formServlet</servlet-name>
+        <url-pattern>/submit.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/login.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ScriptServlet</servlet-name>
+        <url-pattern>/sy</url-pattern>
+    </servlet-mapping>
 </web-app>
