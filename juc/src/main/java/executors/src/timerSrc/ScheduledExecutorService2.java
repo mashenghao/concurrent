@@ -3,9 +3,7 @@ package executors.src.timerSrc;
 import atomic.ThreadUtil;
 
 import java.util.Date;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.ScheduledThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -26,11 +24,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class ScheduledExecutorService2 {
 
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, ExecutionException {
         ScheduledExecutorService service = new ScheduledThreadPoolExecutor(4);
 
-        //1.只延期执行一次
-        service.schedule(() -> System.out.println("只延期执行一次"), 3, TimeUnit.SECONDS);
+        //1.只延期执行一次，返回的是ScheduledFuture,当定时任务被执行后，future才会得到值。
+        ScheduledFuture<?> future = service.schedule(() -> System.out.println("只延期执行一次"), 3, TimeUnit.SECONDS);
 
 
         /*
