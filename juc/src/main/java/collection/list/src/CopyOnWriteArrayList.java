@@ -1,4 +1,4 @@
-package chapter16.src;
+package collection.list.src;
 
 
 import java.util.AbstractList;
