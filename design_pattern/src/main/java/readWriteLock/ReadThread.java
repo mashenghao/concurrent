@@ -1,6 +1,6 @@
 package readWriteLock;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * 读线程，对一个共享数据（字符数组），进行读取，复制到本地线程，可以开取多个线程

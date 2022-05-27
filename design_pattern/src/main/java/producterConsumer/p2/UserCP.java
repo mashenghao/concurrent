@@ -1,6 +1,6 @@
 package producterConsumer.p2;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * @author: mahao

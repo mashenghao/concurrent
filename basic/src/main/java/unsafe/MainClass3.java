@@ -1,7 +1,7 @@
 package unsafe;
 
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * 当一个线程是死线程，一直获得锁，另一个线程一直等待，

@@ -1,6 +1,6 @@
 package observe;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 import java.util.Arrays;
 import java.util.List;

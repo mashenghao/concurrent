@@ -1,6 +1,6 @@
 package threadlocal.dpart10;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * 数据库服务，获取到数据，然后存入到上下文中

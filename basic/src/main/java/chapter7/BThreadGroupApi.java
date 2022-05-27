@@ -1,6 +1,6 @@
 package chapter7;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * @author: mahao

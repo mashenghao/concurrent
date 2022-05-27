@@ -1,6 +1,6 @@
 package producterConsumer;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 import java.util.LinkedList;
 

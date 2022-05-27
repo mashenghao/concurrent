@@ -1,6 +1,6 @@
 package threadlocal.dpart10.ThreadLocalContext;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 import threadlocal.dpart10.Context;
 
 /**

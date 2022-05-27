@@ -14,11 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>cn.mh</groupId>
-            <artifactId>concurrent</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>cn.mh</groupId>
-            <artifactId>concurrent</artifactId>
+            <artifactId>basic</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>

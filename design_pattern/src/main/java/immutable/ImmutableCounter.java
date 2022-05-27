@@ -1,6 +1,6 @@
 package immutable;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * 基于 “不可变类” 实现一个线程安全的 Integer 计数器

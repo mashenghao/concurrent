@@ -1,6 +1,6 @@
 package threadlocal.dpart9;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * ThreadLocal简易测试使用说明

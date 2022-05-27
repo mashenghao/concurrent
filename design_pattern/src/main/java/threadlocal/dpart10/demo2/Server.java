@@ -1,6 +1,6 @@
 package threadlocal.dpart10.demo2;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 import java.util.Map;
 

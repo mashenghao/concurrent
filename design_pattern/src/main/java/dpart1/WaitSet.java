@@ -1,6 +1,6 @@
 package dpart1;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * wait方法中的waitSet的描述：

@@ -1,6 +1,6 @@
 package countDownLatch;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * Count Down设计模式，用于控制线程的并发数

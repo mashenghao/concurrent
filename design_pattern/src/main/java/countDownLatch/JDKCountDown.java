@@ -1,6 +1,6 @@
 package countDownLatch;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 import java.util.concurrent.CountDownLatch;
 

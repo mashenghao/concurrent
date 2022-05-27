@@ -1,6 +1,6 @@
 package Volatile;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * 双重检查保证单例实体，容易引发npe重现；

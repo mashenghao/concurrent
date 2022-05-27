@@ -1,6 +1,6 @@
 package requestQueue;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * 模拟服务器处理请求,继承Thread类，作为可以启动多个服务线程

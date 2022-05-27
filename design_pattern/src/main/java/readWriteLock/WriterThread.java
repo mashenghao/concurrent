@@ -1,6 +1,6 @@
 package readWriteLock;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * 写线程

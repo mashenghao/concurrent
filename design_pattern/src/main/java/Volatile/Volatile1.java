@@ -1,6 +1,6 @@
 package Volatile;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * 创建两个线程，共享一个变量，查看java运算，会将处于主存的共享变量拷贝到

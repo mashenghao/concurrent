@@ -1,6 +1,6 @@
 package Volatile;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * 多线程下，读线程和写线程的内存间交互操作。

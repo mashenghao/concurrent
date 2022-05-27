@@ -1,6 +1,6 @@
 package requestQueue;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * Guarded Suspension 设计模式，

@@ -1,7 +1,7 @@
 package ThreadPerMessag;
 
-import chapter3.ThreadUtil;
-import chapter8.ThreadPool3;
+import chapter3_methods.ThreadUtil;
+import chapter8_pool.ThreadPool3;
 
 import java.net.Socket;
 

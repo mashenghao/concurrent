@@ -1,6 +1,6 @@
 package dpart4;
 
-import chapter8.ThreadPool3;
+import chapter8_pool.ThreadPool3;
 
 /**
  * 模拟并发访问一个资源，通过对资源的加锁，达到单个线程访问的目的

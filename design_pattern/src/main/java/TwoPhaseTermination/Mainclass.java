@@ -1,6 +1,6 @@
 package TwoPhaseTermination;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * Two Phase Termination(两阶段终止)设计模式，是为了线程

@@ -1,6 +1,6 @@
 package observe;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * 具体的监听类

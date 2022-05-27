@@ -1,6 +1,6 @@
 package unsafe;
 
-import chapter3.ThreadUtil;
+import chapter3_methods.ThreadUtil;
 
 /**
  * 测试显式锁
