@@ -49,22 +49,22 @@ public class ThreadPoolInterrupt {
         //测试线程池中的线程能否被中断
         ThreadPoolExecutor pool2 = (ThreadPoolExecutor) Executors.newFixedThreadPool(1, r -> new Thread(r, "池中2-" + atomicInteger2.getAndIncrement()));
         pool2.execute(() -> {
-            System.out.println(ThreadUtil.getName() + Thread.interrupted());
+            System.out.println(ThreadUtil.getName() + Thread.currentThread().isInterrupted());
             System.out.println("中断前活跃线程数: " + pool2.getActiveCount());
             Thread.currentThread().interrupt();
             System.out.println("中断后活跃线程数: " + pool2.getActiveCount());
-            System.out.println(ThreadUtil.getName() + Thread.interrupted());
+            System.out.println(ThreadUtil.getName() + Thread.currentThread().isInterrupted());
             atomicReference.set(Thread.currentThread());
         });
         ThreadUtil.sleep(1000);
         atomicReference.get().interrupt();
 
         pool2.execute(() -> {
-            System.out.println(ThreadUtil.getName() + Thread.interrupted());
+            System.out.println(ThreadUtil.getName() + Thread.currentThread().isInterrupted());
             System.out.println("中断前活跃线程数: " + pool2.getActiveCount());
             Thread.currentThread().interrupt();
             System.out.println("中断后活跃线程数: " + pool2.getActiveCount());
-            System.out.println(ThreadUtil.getName() + Thread.interrupted());
+            System.out.println(ThreadUtil.getName() + Thread.currentThread().isInterrupted());
         });
         System.out.println("================= 测试2 ==== （无法对worker线程进行中断, 1. worker线程运行时中断，" +
                 "中断异常会发生在用户task中。 2. worker本身可被中断只有在getTask时等待任务可以中断,但是getTask的自旋，捕获了中断异常）");
