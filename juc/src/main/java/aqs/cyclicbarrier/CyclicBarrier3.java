@@ -1,4 +1,4 @@
-package utils.cyclicbarrier;
+package aqs.cyclicbarrier;
 
 
 import atomic.ThreadUtil;

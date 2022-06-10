@@ -1,4 +1,4 @@
-package utils.semaphore;
+package aqs.semaphore;
 
 import atomic.ThreadUtil;
 
